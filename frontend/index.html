@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gyana Sinha — Software Developer </title>
+<meta name="description" content="Gyana Sinha — Software Developer building LLM systems, RAG pipelines and autonomous AI agents." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#top" class="logo">GS<span class="logo-dot">.</span></a>
+    <nav class="nav">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#agent">Ask the agent</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow mono">Software developer</p>
+      <h1>Gyana Sinha</h1>
+      <p class="hero-summary">
+        I build the systems behind AI products that actually ship retrieval augmented
+        pipelines, autonomous agents that plan and execute their own tasks, and document
+        intelligence platforms that turn OCR and LLMs into real business workflows. Python and
+        Django are home base; the last three years have been spent making AI reliable in
+        production, not just in a notebook.
+      </p>
+      <div class="hero-actions">
+        <a href="#agent" class="btn btn-primary">Ask my agent about me</a>
+        <a href="/assets/GyanaSinha.pdf" download class="btn btn-ghost">View Resume</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>2 yrs</dt><dd>shipping production AI systems</dd></div>
+        <div><dt>AI</dt><dd>LLM · RAG pipelines · AWS Bedrock · LangChain · OpenAI APIs</dd></div>
+        <div><dt>Python</dt><dd>Django · FastAPI · Celery · API Integration </dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-portrait">
+      <div class="portrait-frame">
+        <img src="/assets/gyana.jpg" alt="Portrait of Gyana Sinha" />
+        <span class="portrait-tag mono">status: <em>available</em></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section wrap">
+    <h2><span class="mono section-index"></span> Work Experience</h2>
+    <ol class="log">
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-period mono">Sept 2024 &mdash; Present</span>
+          <h3>Software Developer <span class="log-company">/ GMoney Pvt. Ltd.</span></h3>
+        </div>
+        <ul>
+          <li>Built AI powered document pipelines (OCR, OpenAI APIs, LangChain, RAG) that automate structured data extraction from medical and insurance documents, cutting manual review effort and speeding up claims.</li>
+          <li>Shipped a Video KYC identity verification flow using AI face extraction and Aadhaar image matching, replacing manual identity checks in loan onboarding.</li>
+          <li>Built a CIBIL evaluation module that automates loan eligibility and credit limit calculation.</li>
+          <li>Designed secure RESTful APIs for claim management, policy validation, and approval workflows across the full SDLC.</li>
+          <li>Tuned PostgreSQL queries and API response times via indexing and caching; added Celery/Redis background processing for claim validation and notifications.</li>
+          <li>Built a Sales Management System and internal Task/Asset tools with SLA tracking, plus improved Django Admin usability.</li>
+        </ul>
+      </li>
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-period mono">Jan 2024 &mdash; June 2024</span>
+          <h3>Intern Software Developer <span class="log-company">/ Euspace Technologies</span></h3>
+        </div>
+        <ul>
+          <li>Developed backend modules in Python/Django and built REST APIs for frontend and third party integration.</li>
+          <li>Designed and maintained MySQL database structures; contributed to debugging, testing, and performance tuning.</li>
+          <li>Worked across the full SDLC with senior developers, supporting documentation and deployment.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section wrap">
+    <h2><span class="mono section-index"></span> Projects</h2>
+    <div class="cards">
+      <article class="card">
+        <p class="mono card-stack">python &middot; fastapi &middot; python docx</p>
+        <h3>Autonomous AI Agent for Business Document Generation</h3>
+        <p>An agent that reads a natural language business request, writes its own execution
+          plan, then works through it &mdash; planning, execution, and validation as separate,
+          swappable stages &mdash; and produces a polished Word document at the end, even from
+          incomplete requests.</p>
+      </article>
+      <article class="card">
+        <p class="mono card-stack">django &middot; openai &middot; langchain &middot; ocr &middot; rag</p>
+        <h3>AI Powered Document Intelligence Platform</h3>
+        <p>End to end platform for secure document upload, validation, and structured-data
+          extraction, with Celery/Redis pipelines so high document volumes never block
+          user facing requests, and S3 backed storage with full logging.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section wrap">
+    <h2><span class="mono section-index"></span> Skills</h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h4 class="mono">AI / ML Engineering</h4>
+        <p>RAG pipeline design, LLM integration (OpenAI APIs), LangChain, prompt engineering, agentic workflows &amp; task planning, OCR-based extraction, embeddings &amp; semantic search, computer vision (face matching / ID verification).</p>
+      </div>
+      <div class="skill-group">
+        <h4 class="mono">Languages &amp; Backend</h4>
+        <p>Python, Django, Django REST Framework, FastAPI, REST API design, Scikit-learn, TensorFlow.</p>
+      </div>
+      <div class="skill-group">
+        <h4 class="mono">Data &amp; Infra</h4>
+        <p>PostgreSQL, MySQL, Celery, Redis, AWS (S3, Lambda, Bedrock).</p>
+      </div>
+      <div class="skill-group">
+        <h4 class="mono">Engineering Practice</h4>
+        <p>SDLC, system design, performance optimization, root cause analysis, code review, Git/GitHub, documentation.</p>
+      </div>
+    </div>
+
+    <h2 class="education-heading"><span class="mono section-index"></span> Education</h2>
+    <ul class="education-list">
+      <li><span class="mono">2024</span> B.Tech, Information Technology &mdash; K.J. Somaiya College of Engineering (80.00%)</li>
+      <li><span class="mono">2021</span> Diploma, Computer Technology &mdash; Sou. Venutai Chavan Polytechnic (91.89%)</li>
+      <li><span class="mono">2016</span> SSC &mdash; B.D. Public School (86.06%)</li>
+    </ul>
+  </section>
+
+  <!-- AGENT / CHAT -->
+  <section id="agent" class="section wrap">
+    <h2><span class="mono section-index"></span> Ask the agent</h2>
+    <p class="agent-intro">Hello Guys ! I am an assistant of Gyana. How Can I help you?</p>
+
+    <div class="console" role="group" aria-label="Chat with Gyana's portfolio agent">
+      <div class="console-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="console-title mono">gyana agent &mdash; chat.session</span>
+        <span class="console-status mono" id="agent-status">● idle</span>
+      </div>
+      <div class="console-body" id="chat-log">
+        <div class="msg msg-agent">
+          <span class="msg-role mono">agent</span>
+          <p>Hi — I know Gyana's work in detail. Ask me anything: what she's built, what she's
+            good at, or where she'd be useful on a team.</p>
+        </div>
+      </div>
+      <form class="console-input-row" id="chat-form">
+        <span class="prompt-caret mono">&gt;</span>
+        <input
+          type="text"
+          id="chat-input"
+          class="mono"
+          placeholder="e.g. What has she built with RAG?"
+          maxlength="500"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="btn btn-primary btn-small" id="chat-send">Ask</button>
+      </form>
+      <p class="console-hint mono" id="chat-hint"></p>
+    </div>
+
+    <div class="suggested-questions" id="suggested-questions">
+      <button type="button" class="chip">What has she built with RAG?</button>
+      <button type="button" class="chip">Is she good with Django and FastAPI?</button>
+      <button type="button" class="chip">Would she be a fit for an AI agents role?</button>
+      <button type="button" class="chip">What did she do at GMoney?</button>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <div class="wrap footer-row">
+    <div>
+      <p class="mono footer-eyebrow">Thankyou!</p>
+    </div>
+    <div class="footer-contacts">
+      <a href="mailto:sinhagyana31@gmail.com">sinhagyana31@gmail.com</a>
+      <a href="tel:+917903598175">+91 79035 98175</a>
+      <a href="https://linkedin.com/in/gyana-sinha" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <p class="footer-note mono">Built by Gyana Sinha · FastAPI backend · agent powered by Grok</p>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
