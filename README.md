@@ -46,7 +46,8 @@ portfolio-project/
    limits/pricing there since they change).
 2. ```bash
    cd backend
-   cp .env.example .env
+   #create .env file
+   cp .env
    # open .env and paste your GROQ_API_KEY and paste GROQ_MODEL
    pip install -r requirements.txt
    uvicorn main:app --reload --port 8000
