@@ -31,7 +31,7 @@ portfolio-project/
 │   ├── main.py             # FastAPI app: serves the frontend + POST /api/chat
 │   ├── resume_data.py       # single source of truth for Gyana's facts
 │   ├── requirements.txt
-│   └── .env         # copy to .env and add your x.ai key
+│   └── .env         # copy to .env and add your Groq API key
 └── frontend/
     ├── index.html
     ├── style.css
