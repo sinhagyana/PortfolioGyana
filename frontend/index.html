@@ -21,7 +21,6 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#agent">Ask the agent</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -42,7 +41,6 @@
         production, not just in a notebook.
       </p>
       <div class="hero-actions">
-        <a href="#agent" class="btn btn-primary">Ask my agent about me</a>
         <a href="/assets/GyanaSinha.pdf" download class="btn btn-ghost">View Resume</a>
       </div>
       <dl class="hero-stats">
@@ -55,7 +53,7 @@
     <div class="hero-portrait">
       <div class="portrait-frame">
         <img src="/assets/gyana.jpg" alt="Portrait of Gyana Sinha" />
-        <span class="portrait-tag mono">status: <em>available</em></span>
+        <span class="portrait-tag mono">status: <em>Open To Work</em></span>
       </div>
     </div>
   </section>
@@ -144,47 +142,6 @@
     </ul>
   </section>
 
-  <!-- AGENT / CHAT -->
-  <section id="agent" class="section wrap">
-    <h2><span class="mono section-index"></span> Ask the agent</h2>
-    <p class="agent-intro">Hello Guys ! I am an assistant of Gyana. How Can I help you?</p>
-
-    <div class="console" role="group" aria-label="Chat with Gyana's portfolio agent">
-      <div class="console-bar">
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="console-title mono">gyana agent &mdash; chat.session</span>
-        <span class="console-status mono" id="agent-status">● idle</span>
-      </div>
-      <div class="console-body" id="chat-log">
-        <div class="msg msg-agent">
-          <span class="msg-role mono">agent</span>
-          <p>Hi — I know Gyana's work in detail. Ask me anything: what she's built, what she's
-            good at, or where she'd be useful on a team.</p>
-        </div>
-      </div>
-      <form class="console-input-row" id="chat-form">
-        <span class="prompt-caret mono">&gt;</span>
-        <input
-          type="text"
-          id="chat-input"
-          class="mono"
-          placeholder="e.g. What has she built with RAG?"
-          maxlength="500"
-          autocomplete="off"
-          required
-        />
-        <button type="submit" class="btn btn-primary btn-small" id="chat-send">Ask</button>
-      </form>
-      <p class="console-hint mono" id="chat-hint"></p>
-    </div>
-
-    <div class="suggested-questions" id="suggested-questions">
-      <button type="button" class="chip">What has she built with RAG?</button>
-      <button type="button" class="chip">Is she good with Django and FastAPI?</button>
-      <button type="button" class="chip">Would she be a fit for an AI agents role?</button>
-      <button type="button" class="chip">What did she do at GMoney?</button>
-    </div>
-  </section>
 
 </main>
 
@@ -201,6 +158,50 @@
   </div>
   <p class="footer-note mono">Built by Gyana Sinha · FastAPI backend · agent powered by Grok</p>
 </footer>
+
+<!-- FLOATING AGENT WIDGET -->
+<div class="agent-widget" id="agent-widget">
+  <div class="agent-float-panel" id="agent-float-panel" hidden>
+    <div class="console-bar">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="console-title mono">Gyana's Agent</span>
+      <span class="console-status mono" id="agent-status-float">● idle</span>
+      <button type="button" class="agent-float-close" id="agent-float-close" aria-label="Close chat">✕</button>
+    </div>
+    <div class="console-body" id="chat-log-float">
+      <div class="msg msg-agent">
+        <span class="msg-role mono">agent</span>
+        <p>Hi — I know Gyana's work in detail. Ask me anything: what she's built, what she's
+          good at, or where she'd be useful on a team.</p>
+      </div>
+    </div>
+    <div class="suggested-questions agent-float-chips" id="suggested-questions-float">
+      <button type="button" class="chip">What has she built with RAG?</button>
+      <button type="button" class="chip">Is she good with Django and FastAPI?</button>
+      <button type="button" class="chip">What did she do at GMoney?</button>
+    </div>
+    <form class="console-input-row" id="chat-form-float">
+      <span class="prompt-caret mono">&gt;</span>
+      <input
+        type="text"
+        id="chat-input-float"
+        class="mono"
+        placeholder="e.g. What has she built with RAG?"
+        maxlength="500"
+        autocomplete="off"
+        required
+      />
+      <button type="submit" class="btn btn-primary btn-small" id="chat-send-float">Ask</button>
+    </form>
+    <p class="console-hint mono" id="chat-hint-float"></p>
+  </div>
+
+  <button type="button" class="agent-fab" id="agent-fab" aria-label="Chat with Gyana's agent" aria-expanded="false" aria-controls="agent-float-panel">
+    <svg class="agent-fab-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 3.5C6.98 3.5 3 7.14 3 11.6c0 2.42 1.19 4.6 3.08 6.09-.12 1.15-.5 2.53-1.42 3.86a.55.55 0 00.6.85c2.06-.55 3.66-1.5 4.65-2.22.98.24 2.02.37 3.09.37 5.02 0 9-3.64 9-8.15S17.02 3.5 12 3.5z" fill="currentColor"/>
+    </svg>
+  </button>
+</div>
 
 <script src="/script.js"></script>
 </body>
