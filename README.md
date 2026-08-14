@@ -7,8 +7,8 @@ imagination — so it won't invent experience she doesn't have.
 **Stack** (matches the skills on her resume):
 - Backend: **Python + FastAPI**, `requests` to call the model, no other frameworks.
 - Frontend: plain **HTML/CSS/JS** — no build step, no npm, nothing extra to install.
-- Model: **Grok** via x.ai's API (OpenAI-compatible), because it has a free/cheap tier.
-
+- Model: **Llama 3.3 70B** via the **Groq API** (OpenAI-compatible), using Groq for fast and cost-effective inference.
+  
 ## How the "own words" part works
 
 `backend/resume_data.py` holds the facts (jobs, projects, skills, education) as plain Python
